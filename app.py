@@ -24,7 +24,7 @@ def tinyurl(query):
 		shortener = pyshorteners.Shortener()
 		shortLink = shortener.tinyurl.short(query)
 	except:
-		shortLink = ""
+		shortLink = "Something Went Wrong!"
 	return shortLink
 
 def bitly(query):
@@ -32,7 +32,7 @@ def bitly(query):
         shortener = pyshorteners.Shortener(api_key="bcea98de721cdb83cdf8b6fba6ff3a7b12922879")
         shortLink = shortener.bitly.short(query)
     except:
-        shortLink = ""
+        shortLink = "Something Went Wrong!"
     return shortLink
 
 def adfly(query):
@@ -40,7 +40,7 @@ def adfly(query):
         shortener = pyshorteners.Shortener(api_key="3f71fb202d563255e6bc39cd5f6f0063", user_id='19928857', domain='q.gs')
         shortLink = shortener.adfly.short(query)
     except:
-        shortLink = ""
+        shortLink = "Something Went Wrong!"
     return shortLink
 
 if __name__ == '__main__':
