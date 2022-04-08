@@ -5,7 +5,6 @@ import pyshorteners
 @app.route('/')
 def home():
 	return render_template("index.html")
-
 @app.route('/', methods = ['POST', 'GET'])
 def my_form_post():
     url = request.form['text']
